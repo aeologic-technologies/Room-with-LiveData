@@ -27,8 +27,10 @@ public class EditActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        
         getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+        
         initViews();
         mDb = AppDatabase.getInstance(getApplicationContext());
         intent = getIntent();
